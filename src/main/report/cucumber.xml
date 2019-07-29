@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="98.352296">
+<testcase classname="Validar funcionalidades do site automationpractice" name="Validar cadastro efetuado com sucesso" time="21.519268">
+<system-out><![CDATA[Dado que eu acesse o site...................................................passed
+E clicar em registrar.......................................................passed
+Quando eu preencher os campos do cadastro...................................passed
+Então o cadastro será efetuado com sucesso..................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validar funcionalidades do site automationpractice" name=": Validar Login com usuário &quot;válido&quot;" time="13.088533">
+<system-out><![CDATA[Dado que eu acesse o site...................................................passed
+Quando eu preencher os campos de login com usuário "válido".................passed
+Então o sistema deve "permitir o login".....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validar funcionalidades do site automationpractice" name=": Validar Login com usuário &quot;e-mail inválido&quot;" time="13.262629">
+<system-out><![CDATA[Dado que eu acesse o site...................................................passed
+Quando eu preencher os campos de login com usuário "e-mail inválido"........passed
+Então o sistema deve "bloquear o login: e-mail".............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validar funcionalidades do site automationpractice" name=": Validar Login com usuário &quot;senha inválida&quot;" time="11.534758">
+<system-out><![CDATA[Dado que eu acesse o site...................................................passed
+Quando eu preencher os campos de login com usuário "senha inválida".........passed
+Então o sistema deve "bloquear o login: senha"..............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Validar funcionalidades do site automationpractice" name="Validar a compra de um produto" time="38.947108">
+<system-out><![CDATA[Dado que eu esteja logado...................................................passed
+Quando eu realizar a compra.................................................passed
+Então a compra é finalizada com sucesso.....................................passed
+]]></system-out>
+</testcase>
+</testsuite>

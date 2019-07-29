@@ -16,6 +16,12 @@ Este projeto tem como objetivo automatizar os testes regressivos **Web**
 
 Nós utilizamos [GIT](https://git-scm.com/) para versionamento.  
 
+## IDE
+
+Utilize o IDE de sua preferência, lembrando que as configurações do Maven devem ser setadas no programa caso não venha configurado.
+ * [Configurar variável Maven](http://www.matera.com/blog/post/tutorial-instalacao-apache-maven-configuracao-eclipse)
+
+
 ## Configurando o ambiente
 
  * Faça o download do JDK/JRE [clicando aqui](https://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html)

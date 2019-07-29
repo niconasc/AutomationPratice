@@ -35,7 +35,7 @@ Path da classe:
 Editar no `Runner` a tag com a "@" do CT ou da suíte desejada antes de executá-lo, ex :
 
 
-| **@web**              |            **@all**             | **@< Texto do CE >** |
+| **@web**              |            **@all**             | **@< Texto do CT >** |
 |                     ---|                          ---| ---|
 |  Testes automatizados frontend    |   Todos os testes   | Testes automatizados do CT específico | 
 

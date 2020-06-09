@@ -1,6 +1,6 @@
 # Automation Pratice - Automação de Testes [ Web ]
 
-Este projeto tem como objetivo automatizar os testes **Web** utilizando Java + Cucumber + ReportBuilder
+Este projeto tem como objetivo automatizar os testes **Web** utilizando Java + Selenium (bonigarcia) + Cucumber + ReportBuilder
 
 ## Tecnologias utilizadas
 

@@ -45,6 +45,11 @@ Editar no `Runner` a tag com a "@" do CT ou da suíte desejada antes de executá
 |                     ---|                          ---| ---|
 |  Testes automatizados frontend    |   Todos os testes   | Testes automatizados do CT específico | 
 
+Também é possível executar os testes via linha de comando conforme abaixo:
+
+| Exemplo: |
+| :---:   |
+| mvn test -Dcucumber.options="--tags @tag_desejada" |
 
 Package com as `.feature` para consulta das tags:
 > ../src/main/resources/feature/*

@@ -32,7 +32,8 @@ public class SeleniumRobot {
     public static PropertiesManager propertiesManager = new PropertiesManager();
     protected static WebDriver webDriver;
     private static WebDriverWait wait;
-    private static String url = propertiesManager.getProp("src/main/resources/properties/web.properties","url");
+    private static String path = "src/main/resources/properties/web.properties";
+    private static String url = propertiesManager.getProp(path, "url");
 
 
     /**
@@ -180,7 +181,9 @@ public class SeleniumRobot {
      * Realiza Scroll até o elemento passado através de JavaScript
      */
     public static void scrollToElement(WebElement element) {
-        ((JavascriptExecutor) webDriver).executeScript("arguments[0].scrollIntoViewIfNeeded(true);", element);
+        if (Utils.isChrome()) {
+            ((JavascriptExecutor) webDriver).executeScript("arguments[0].scrollIntoViewIfNeeded(true);", element);
+        }
     }
 
     /**
@@ -442,8 +445,10 @@ public class SeleniumRobot {
      * Move o scroll até o elemento e contorna o elemento com linha vermelha
      */
     public void highlightElement(WebElement element) {
-        scrollToElement(element);
-        ((JavascriptExecutor) webDriver).executeScript("arguments[0].style.border='2px solid red'", element);
+        if(Utils.isChrome()){
+            scrollToElement(element);
+            ((JavascriptExecutor) webDriver).executeScript("arguments[0].style.border='2px solid red'", element);
+        }
     }
 
 }

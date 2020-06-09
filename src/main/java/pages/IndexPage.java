@@ -1,14 +1,13 @@
 package pages;
 
 import commons.SeleniumRobot;
-import commons.Utils;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-import static commons.Utils.*;
+import static commons.Utils.getRandomNumber;
 
 public class IndexPage extends SeleniumRobot {
 

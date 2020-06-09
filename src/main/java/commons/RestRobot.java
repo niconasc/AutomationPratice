@@ -1,11 +1,8 @@
 package commons;
 
-import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
-import org.junit.Test;
 
-import java.io.UnsupportedEncodingException;
-import java.util.ArrayList;
+import static io.restassured.RestAssured.when;
 
 public class RestRobot {
 
@@ -13,7 +10,7 @@ public class RestRobot {
 
     public String[] getRequest(String endpoint, String chave) {
         String jsonRetorno = null;
-        JsonPath json = RestAssured.when()
+        JsonPath json = when()
                 .get(endpoint)
                 .then()
                 .extract()

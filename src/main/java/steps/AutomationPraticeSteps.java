@@ -1,7 +1,6 @@
 package steps;
 
 import commons.PropertiesManager;
-import commons.Utils;
 import cucumber.api.java.pt.Dado;
 import cucumber.api.java.pt.E;
 import cucumber.api.java.pt.Então;
@@ -10,8 +9,8 @@ import pages.*;
 
 import java.io.IOException;
 
-import static commons.Utils.*;
 import static commons.Utils.getRandomNumber;
+import static commons.Utils.writeTxtFile;
 
 public class AutomationPraticeSteps {
 
@@ -106,7 +105,6 @@ public class AutomationPraticeSteps {
 
     @Quando("eu realizar a compra")
     public void euRealizarACompra() {
-        authenticationPage.voltarHome();
         indexPage.clicarAnuncio();
         productPage.comprarProduto("1");
         summaryPage.continuarCompra();

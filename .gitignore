@@ -1,0 +1,17 @@
+# Ignora pasta target
+/target/
+
+# Ignora arquivos .xml, .class, .html e .xhtml
+*.class
+*.html
+*.xhtml
+*.xml
+
+# Ignora pasta do IDE
+/.idea/
+
+# Ignora pasta de report
+/src/main/report/
+
+# Ignora alterações do runner
+/src/test/java/runner

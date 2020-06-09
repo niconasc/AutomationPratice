@@ -5,8 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.List;
-
 public class ProductPage extends SeleniumRobot {
 
     /**
@@ -26,7 +24,7 @@ public class ProductPage extends SeleniumRobot {
     private WebElement selectSize;
     @FindBy(id = "add_to_cart")
     private WebElement btAddToCart;
-    @FindBy(xpath = "//div[@class='button-container']/a")
+    @FindBy(xpath = "//div[@class='button-container']/a/span")
     private WebElement btProceedCheckout;
 
     /**

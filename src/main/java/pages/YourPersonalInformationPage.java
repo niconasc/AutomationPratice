@@ -63,11 +63,6 @@ public class YourPersonalInformationPage extends SeleniumRobot {
         PageFactory.initElements(webDriver, this);
     }
 
-    public static void main(String[] args) {
-
-        System.out.println(getRandomNumber(54));
-    }
-
     /**
      * Metodo
      */

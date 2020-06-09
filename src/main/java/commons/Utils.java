@@ -80,7 +80,7 @@ public class Utils {
     public static BufferedReader executeCommand(String command) throws IOException {
         String sistemaOperacional = System.getProperty("os.name");
         Process p;
-        if (sistemaOperacional.equalsIgnoreCase("mac os x")) {
+        if (!sistemaOperacional.equalsIgnoreCase("windows")) {
             p = Runtime.getRuntime().exec(new String[]{"/bin/bash", "-l", "-c", command});
         } else {
             p = Runtime.getRuntime().exec(new String[]{"powershell", "-c", command});
@@ -153,7 +153,7 @@ public class Utils {
 
     public static void writeTxtFile(String path, String... args) throws IOException {
         File arquivo = new File(path);
-        if (arquivo.exists()){
+        if (arquivo.exists()) {
             arquivo.delete();
             arquivo.createNewFile();
         }
@@ -164,5 +164,11 @@ public class Utils {
         }
         fileWriter.close();
 
+    }
+
+    public static boolean isChrome(){
+        String navegador = PropertiesManager.getProp("src/main/resources/properties/web.properties", "navegador");
+        return navegador.equalsIgnoreCase("CHROME")
+                || navegador.equalsIgnoreCase("HEADLESS");
     }
 }

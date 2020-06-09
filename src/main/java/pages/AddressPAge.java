@@ -24,8 +24,8 @@ public class AddressPAge extends SeleniumRobot {
     /**
      * Métodos
      */
-        public void continuarCompra(){
-            click(btProceedCheckout);
-        }
+    public void continuarCompra() {
+        click(btProceedCheckout);
+    }
 
 }
